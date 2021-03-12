@@ -1,0 +1,11 @@
+Exemplo simples de importação:
+
+https://docs.microsoft.com/pt-br/sql/integration-services/import-export-data/get-started-with-this-simple-example-of-the-import-and-export-wizard?view=sql-server-ver15
+
+Modo de iniciar o Assistente de Importação e Exportação do SQL Server:
+
+https://docs.microsoft.com/pt-br/sql/integration-services/import-export-data/start-the-sql-server-import-and-export-wizard?view=sql-server-ver15
+
+Sobre o SSIS (SQL Server Integration Services):
+
+https://docs.microsoft.com/pt-br/sql/integration-services/import-export-data/import-and-export-data-with-the-sql-server-import-and-export-wizard?view=sql-server-ver15
