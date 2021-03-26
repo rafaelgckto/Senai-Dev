@@ -1,4 +1,7 @@
 ﻿namespace Senai.Peoples.WebApi.Domains {
+    /// <summary>
+    /// Classe que representa a entidade Funcionario.
+    /// </summary>
     public class Funcionario {
         public int idFuncionario { get; set; }
         public string nome { get; set; }

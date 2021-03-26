@@ -5,10 +5,17 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 
 namespace Senai.Peoples.WebApi.Repositories {
+    /// <summary>
+    /// Classe responsável pelo repositório dos funcionários.
+    /// </summary>
     public class FuncionarioRepository : IFuncionarioRepository {
         //MSSQLSERVER é a instância padrão, portanto, apenas forneça o nome do servidor sozinho na string de conexão.
         const string stringConexao = "Server=DESKTOP-KVRRD63;Database=Peoples;User Id=sa;Password=7895123;";
 
+        /// <summary>
+        /// Lista todos os funcionários.
+        /// </summary>
+        /// <returns>Uma lista de funcionários.</returns>
         public List<Funcionario> Get() {
             List<Funcionario> listEmployees = new List<Funcionario>();
 
@@ -37,6 +44,11 @@ namespace Senai.Peoples.WebApi.Repositories {
             return listEmployees;
         }
 
+        /// <summary>
+        /// Busca um funcionário através do seu id.
+        /// </summary>
+        /// <param name="id">O 'id' do funcionário que será buscado.</param>
+        /// <returns>O funcionário buscado ou null caso não seja encontrado.</returns>
         public Funcionario GetById(int id) {
             using(SqlConnection con = new SqlConnection(stringConexao)) {
                 string querySelectById = "SELECT idFuncionario, nome, sobrenome FROM Funcionario WHERE idFuncionario = @Id";
@@ -65,6 +77,10 @@ namespace Senai.Peoples.WebApi.Repositories {
             }
         }
 
+        /// <summary>
+        /// Efetua um cadastro de um funcionário.
+        /// </summary>
+        /// <param name="newEmployee">Objeto 'newEmployee' com as informações que serão cadastradas.</param>
         public void Insert(Funcionario newEmployee) {
             using(SqlConnection con = new SqlConnection(stringConexao)) {
                 string queryInsert = "INSERT INTO Funcionario(nome, sobrenome) VALUES(@Nome, @Sobrenome)";
@@ -80,6 +96,10 @@ namespace Senai.Peoples.WebApi.Repositories {
             }
         }
 
+        /// <summary>
+        /// Atualiza um funcionário passando as dados pelo corpo.
+        /// </summary>
+        /// <param name="employee">Objeto 'employee' com as novas informações.</param>
         public void Update(Funcionario employee) {
             using(SqlConnection con = new SqlConnection(stringConexao)) {
                 string queryUpdateBody = "UPDATE Funcionario SET nome = @Nome, sobrenome = @Sobrenome WHERE idFuncionario = @Id";
@@ -96,6 +116,11 @@ namespace Senai.Peoples.WebApi.Repositories {
             }
         }
 
+        /// <summary>
+        /// Atualiza um funcionário passando o 'id' pelo recurso (URL)
+        /// </summary>
+        /// <param name="id">Objeto 'id' do funcionário que será atualizado.</param>
+        /// <param name="employee">Objeto 'employee' com as novas informações.</param>
         public void UpdateIdUrl(int id, Funcionario employee) {
             using(SqlConnection con = new SqlConnection(stringConexao)) {
                 string queryUpdateIdUrl = "UPDATE Funcionario SET nome = @Nome, sobrenome = @Sobrenome WHERE idFuncionario = @Id";
@@ -112,6 +137,10 @@ namespace Senai.Peoples.WebApi.Repositories {
             }
         }
 
+        /// <summary>
+        /// Deleta um funcionário atráves do seu 'id'.
+        /// </summary>
+        /// <param name="id">Objeto 'id' do funcionário que será excluído.</param>
         public void Delete(int id) {
             using(SqlConnection con = new SqlConnection(stringConexao)) {
                 string queryDelete = "DELETE FROM Funcionario WHERE idFuncionario = @Id";

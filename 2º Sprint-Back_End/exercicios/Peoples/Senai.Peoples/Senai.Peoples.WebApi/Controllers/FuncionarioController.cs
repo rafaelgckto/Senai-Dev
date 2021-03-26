@@ -6,16 +6,29 @@ using System;
 using System.Collections.Generic;
 
 namespace Senai.Peoples.WebApi.Controllers {
-    [Produces("application/json")]
-    [Route("api/[controller]")]
-    [ApiController]
+    /// <summary>
+    /// Controller responsável pelos endpoints (URLs) referentes aos funcionários.
+    /// </summary>
+    [Produces("application/json")] // Define que o tipo de resposta da API será no formato JSON
+    [Route("api/[controller]")] // Define que a rota de uma requisição será no formato 'dominio/api/nomeController' Ex.: http://localhost:5000/api/funcionario
+    [ApiController] // Define que é um controlador de API
     public class FuncionarioController : ControllerBase {
+        /// <summary>
+        /// Objeto '_employeeRepository' que irá receber todos os métodos definidos na interface IFuncionarioRepository
+        /// </summary>
         IFuncionarioRepository _employeeRepository { get; set; }
 
+        /// <summary>
+        /// Instancia o objeto '_employeeRepository' para que haja a referência aos métodos no repositório
+        /// </summary>
         public FuncionarioController() {
             _employeeRepository = new FuncionarioRepository();
         }
 
+        /// <summary>
+        /// Lista todos os funcionários.
+        /// </summary>
+        /// <returns>Uma lista de funcionários e um status code.</returns>
         [HttpGet]
         public ActionResult Get() {
             List<Funcionario> listEmployee = _employeeRepository.Get();
@@ -23,6 +36,11 @@ namespace Senai.Peoples.WebApi.Controllers {
             return Ok(listEmployee);
         }
 
+        /// <summary>
+        /// Busca um funcionário através do seu 'id'.
+        /// </summary>
+        /// <param name="id">O 'id' do funcionário que será buscado.</param>
+        /// <returns>Um funcionário buscado ou 'NotFound', caso nenhum funcionário seja encontrado.</returns>
         [HttpGet("{id}")]
         public ActionResult GetById(int id) {
             Funcionario soughtEmployee = _employeeRepository.GetById(id);
@@ -33,6 +51,11 @@ namespace Senai.Peoples.WebApi.Controllers {
             return Ok(soughtEmployee);
         }
 
+        /// <summary>
+        /// Cadastra um novo funcionário.
+        /// </summary>
+        /// <param name="employee">Objeto 'employee' recebido na aquisição.</param>
+        /// <returns>Um status code 201 Created.E um novo funcionário cadastrado.</returns>
         [HttpPost]
         public ActionResult Post(Funcionario employee) {
             _employeeRepository.Insert(employee);
@@ -40,6 +63,11 @@ namespace Senai.Peoples.WebApi.Controllers {
             return StatusCode(201);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="employee"></param>
+        /// <returns></returns>
         [HttpPut]
         public ActionResult Put(Funcionario employee) {
             Funcionario soughtEmployee = _employeeRepository.GetById(employee.idFuncionario);
@@ -60,6 +88,12 @@ namespace Senai.Peoples.WebApi.Controllers {
             });
         }
 
+        /// <summary>
+        /// Atualiza um funcionário existente passando o seu 'id' pelo corpo da requisição.
+        /// </summary>
+        /// <param name="id">O 'id' do funcionário que será atualizado.</param>
+        /// <param name="employee">Objeto 'employee' com as novas informações.</param>
+        /// <returns>O funcionário escolhido atualizado.</returns>
         [HttpPut("{id}")]
         public ActionResult PutId(int id, Funcionario employee) {
             Funcionario soughtEmployee = _employeeRepository.GetById(id);
@@ -81,6 +115,11 @@ namespace Senai.Peoples.WebApi.Controllers {
             }
         }
 
+        /// <summary>
+        /// Deleta um funcionário existente.
+        /// </summary>
+        /// <param name="id">O 'id' do funcionário que será deletado.</param>
+        /// <returns>Um status code 204 - NoContent</returns>
         [HttpDelete("{id}")]
         public ActionResult Delete(int id) {
             _employeeRepository.Delete(id);
