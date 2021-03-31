@@ -3,6 +3,7 @@ using Senai.Peoples.WebApi.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Globalization;
 
 namespace Senai.Peoples.WebApi.Repositories {
     /// <summary>
@@ -33,7 +34,8 @@ namespace Senai.Peoples.WebApi.Repositories {
                         Funcionario employee = new Funcionario() {
                             idFuncionario = Convert.ToInt32(sdr[0]),
                             nome = sdr[1].ToString(),
-                            sobrenome = sdr[2].ToString()
+                            sobrenome = sdr[2].ToString(),
+                            dtNasc = Convert.ToDateTime(sdr[3])
                         };
 
                         listEmployees.Add(employee);
@@ -51,7 +53,7 @@ namespace Senai.Peoples.WebApi.Repositories {
         /// <returns>O funcionário buscado ou null caso não seja encontrado.</returns>
         public Funcionario GetById(int id) {
             using(SqlConnection con = new SqlConnection(stringConexao)) {
-                string querySelectById = "SELECT idFuncionario, nome, sobrenome FROM Funcionario WHERE idFuncionario = @Id";
+                string querySelectById = "SELECT idFuncionario, nome, sobrenome, dtNasc FROM Funcionario WHERE idFuncionario = @Id";
 
                 con.Open();
 
@@ -66,7 +68,8 @@ namespace Senai.Peoples.WebApi.Repositories {
                         Funcionario soughtEmployee = new Funcionario() {
                             idFuncionario = Convert.ToInt32(sdr["idFuncionario"]),
                             nome = sdr["nome"].ToString(),
-                            sobrenome = sdr["sobrenome"].ToString()
+                            sobrenome = sdr["sobrenome"].ToString(),
+                            dtNasc = Convert.ToDateTime(sdr["dtNasc"])
                         };
 
                         return soughtEmployee;
@@ -78,16 +81,89 @@ namespace Senai.Peoples.WebApi.Repositories {
         }
 
         /// <summary>
+        /// Busca um funcionário através do seu nome.
+        /// </summary>
+        /// <param name="newEmployee">O 'nameEployee' do funcionário que será buscado.</param>
+        /// <returns>O funcionário buscado ou null caso não seja encontrado.</returns>
+        public Funcionario GetByName(string nameEmployee) {
+            using(SqlConnection con = new SqlConnection(stringConexao)) {
+                string querySelectById = "SELECT idFuncionario, nome, sobrenome, dtNasc FROM Funcionario WHERE nome = @NOME";
+
+                con.Open();
+
+                SqlDataReader sdr;
+
+                using(SqlCommand cmd = new SqlCommand(querySelectById, con)) {
+                    cmd.Parameters.AddWithValue("@NOME", nameEmployee);
+
+                    sdr = cmd.ExecuteReader();
+
+                    /*DateTime dt = DateTime.ParseExact(sdr["dtNasc"].ToString(), "MM/dd/yyyy hh:mm:ss tt", CultureInfo.InvariantCulture);
+                    string s = dt.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);*/
+
+                    if(sdr.Read()) {
+                        Funcionario soughtEmployee = new Funcionario() {
+                            idFuncionario = Convert.ToInt32(sdr["idFuncionario"]),
+                            nome = sdr["nome"].ToString(),
+                            sobrenome = sdr["sobrenome"].ToString(),
+                            dtNasc = Convert.ToDateTime(sdr["dtNasc"])
+                        };
+
+                        return soughtEmployee;
+                    }
+
+                    return null;
+                }
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="fullNameEmployee"></param>
+        /// <returns></returns>
+        public Funcionario GetFullName(string nameEmployee, string surnameEmployee) {
+            using(SqlConnection con = new SqlConnection(stringConexao)) {
+                string querySelectById = "SELECT idFuncionario, nome, sobrenome, dtNasc FROM Funcionario WHERE nome = @NOME AND sobrenome = @SOBRENOME";
+
+                con.Open();
+
+                SqlDataReader sdr;
+
+                using(SqlCommand cmd = new SqlCommand(querySelectById, con)) {
+                    cmd.Parameters.AddWithValue("@NOME", nameEmployee);
+                    cmd.Parameters.AddWithValue("@SOBRENOME", nameEmployee);
+
+                    sdr = cmd.ExecuteReader();
+
+                    if(sdr.Read()) {
+                        Funcionario soughtEmployee = new Funcionario() {
+                            idFuncionario = Convert.ToInt32(sdr["idFuncionario"]),
+                            nome = sdr["nome"].ToString(),
+                            sobrenome = sdr["sobrenome"].ToString(),
+                            dtNasc = Convert.ToDateTime(sdr["dtNasc"])
+                        };
+
+                        return soughtEmployee;
+                    }
+
+                    return null;
+                }
+            }
+        }
+
+        /// <summary>
         /// Efetua um cadastro de um funcionário.
         /// </summary>
         /// <param name="newEmployee">Objeto 'newEmployee' com as informações que serão cadastradas.</param>
         public void Insert(Funcionario newEmployee) {
             using(SqlConnection con = new SqlConnection(stringConexao)) {
-                string queryInsert = "INSERT INTO Funcionario(nome, sobrenome) VALUES(@Nome, @Sobrenome)";
+                string queryInsert = "INSERT INTO Funcionario(nome, sobrenome, dtNasc) VALUES(@Nome, @Sobrenome, @DtNasc)";
 
                 using(SqlCommand cmd = new SqlCommand(queryInsert, con)) {
                     cmd.Parameters.AddWithValue("@Nome", newEmployee.nome);
                     cmd.Parameters.AddWithValue("@Sobrenome", newEmployee.sobrenome);
+                    cmd.Parameters.AddWithValue("@DtNasc", newEmployee.dtNasc);
 
                     con.Open();
 
@@ -102,12 +178,13 @@ namespace Senai.Peoples.WebApi.Repositories {
         /// <param name="employee">Objeto 'employee' com as novas informações.</param>
         public void Update(Funcionario employee) {
             using(SqlConnection con = new SqlConnection(stringConexao)) {
-                string queryUpdateBody = "UPDATE Funcionario SET nome = @Nome, sobrenome = @Sobrenome WHERE idFuncionario = @Id";
+                string queryUpdateBody = "UPDATE Funcionario SET nome = @Nome, sobrenome = @Sobrenome, dtNasc = @DtNasc WHERE idFuncionario = @Id";
 
                 using(SqlCommand cmd = new SqlCommand(queryUpdateBody, con)) {
                     cmd.Parameters.AddWithValue("@Id", employee.idFuncionario);
                     cmd.Parameters.AddWithValue("@Nome", employee.nome);
                     cmd.Parameters.AddWithValue("@Sobrenome", employee.sobrenome);
+                    cmd.Parameters.AddWithValue("@DtNasc", employee.dtNasc);
 
                     con.Open();
 
@@ -123,12 +200,13 @@ namespace Senai.Peoples.WebApi.Repositories {
         /// <param name="employee">Objeto 'employee' com as novas informações.</param>
         public void UpdateIdUrl(int id, Funcionario employee) {
             using(SqlConnection con = new SqlConnection(stringConexao)) {
-                string queryUpdateIdUrl = "UPDATE Funcionario SET nome = @Nome, sobrenome = @Sobrenome WHERE idFuncionario = @Id";
+                string queryUpdateIdUrl = "UPDATE Funcionario SET nome = @Nome, sobrenome = @Sobrenome, dtNasc = @DtNasc WHERE idFuncionario = @Id";
 
                 using(SqlCommand cmd = new SqlCommand(queryUpdateIdUrl, con)) {
                     cmd.Parameters.AddWithValue("@Id", id);
                     cmd.Parameters.AddWithValue("@Nome", employee.nome);
                     cmd.Parameters.AddWithValue("@Sobrenome", employee.sobrenome);
+                    cmd.Parameters.AddWithValue("@DtNasc", employee.dtNasc);
 
                     con.Open();
 

@@ -52,6 +52,39 @@ namespace Senai.Peoples.WebApi.Controllers {
         }
 
         /// <summary>
+        /// Busca um funcionário através do seu 'nome'.
+        /// </summary>
+        /// <param name="nameEmployee">O 'nameEmployee' do funcionário que será buscado.</param>
+        /// <returns>Um funcionário buscado ou 'NotFound', caso nenhum funcionário seja encontrado.</returns>
+        [HttpGet("search/{nameEmployee}")]
+        public ActionResult GetByName(string nameEmployee) {
+            Funcionario soughtEmployee = _employeeRepository.GetByName(nameEmployee);
+            
+            if(soughtEmployee == null)
+                return NotFound("Nenhum funcionário foi encontrado.");
+
+            return Ok(soughtEmployee);
+        }
+
+        [HttpGet("{fullNameEmployee}")]
+        public ActionResult GetFullName(string fullNameEmployee) {
+            // UNDONE: Resolver a condição Ex.: { "nomeCompleto" : "Catarina Strada" };
+
+            // string t = fullNameEmployee;
+            
+            // bool a = char.IsUpper(fullNameEmployee, 0);
+
+            string[] names = fullNameEmployee.Split(' ');
+            Funcionario soughtEmployee = _employeeRepository.GetFullName(names[0], names[1]);
+
+            if(soughtEmployee == null)
+                return NotFound("Nenhum funcionário foi encontrado.");
+            
+
+            return Ok(soughtEmployee);
+        }
+
+        /// <summary>
         /// Cadastra um novo funcionário.
         /// </summary>
         /// <param name="employee">Objeto 'employee' recebido na aquisição.</param>

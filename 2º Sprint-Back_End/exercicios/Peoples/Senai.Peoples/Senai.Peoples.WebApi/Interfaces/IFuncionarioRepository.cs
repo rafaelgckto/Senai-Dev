@@ -8,6 +8,8 @@ namespace Senai.Peoples.WebApi.Interfaces {
     interface IFuncionarioRepository {
         List<Funcionario> Get();
         Funcionario GetById(int id);
+        Funcionario GetByName(string nameEmployee);
+        Funcionario GetFullName(string nameEmployee, string surnameEmployee);
         void Insert(Funcionario newEmployee);
         void Update(Funcionario employee);
         void UpdateIdUrl(int id, Funcionario employee);

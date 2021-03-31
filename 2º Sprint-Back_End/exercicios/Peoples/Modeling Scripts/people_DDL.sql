@@ -10,3 +10,8 @@ CREATE TABLE Funcionario (
 	CONSTRAINT PK_idFuncionario PRIMARY KEY (idFuncionario)
 );
 GO
+
+USE Peoples;
+
+ALTER TABLE Funcionario ADD dtNasc	DATE;
+ALTER TABLE Funcionario ALTER COLUMN dtNasc DATE NOT NULL;
