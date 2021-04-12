@@ -1,6 +1,7 @@
 USE Peoples;
 
-SELECT * FROM Funcionario;
+SELECT * 
+FROM Funcionario;
 
 SELECT nome, sobrenome
 FROM Funcionario

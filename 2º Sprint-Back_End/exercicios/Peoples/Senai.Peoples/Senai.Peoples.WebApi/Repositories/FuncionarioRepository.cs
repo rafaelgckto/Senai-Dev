@@ -10,7 +10,7 @@ namespace Senai.Peoples.WebApi.Repositories {
     /// </summary>
     public class FuncionarioRepository : IFuncionarioRepository {
         //MSSQLSERVER é a instância padrão, portanto, apenas forneça o nome do servidor sozinho na string de conexão.
-        const string stringConexao = "Server=DESKTOP-KVRRD63;Database=Peoples;User Id=sa;Password=7895123;";
+        const string stringConexao = "Server=CELSO-PC;Database=Peoples;User Id=sa;Password=7895123;";
 
         /// <summary>
         /// Lista todos os funcionários.
@@ -156,16 +156,18 @@ namespace Senai.Peoples.WebApi.Repositories {
             List<Funcionario> listEmployees = new List<Funcionario>();
 
             using(SqlConnection con = new SqlConnection(stringConexao)) {
-                string queryOrderASC = "SELECT nome, sobrenome FROM Funcionario ORDER BY nome ASC";
-                string queryOrderDESC = "SELECT nome, sobrenome FROM Funcionario ORDER BY nome DESC";
+                string queryOrderASC = "SELECT nome, sobrenome FROM Funcionario ORDER BY nome @var";
+                //string queryOrderDESC = "SELECT nome, sobrenome FROM Funcionario ORDER BY nome DESC";
 
-                string queryOrder = (order == "ASC") ? queryOrderASC : queryOrderDESC;
+                //string queryOrder = (order == "ASC") ? queryOrderASC : queryOrderDESC;
 
                 con.Open();
 
                 SqlDataReader sdr;
 
-                using(SqlCommand cmd = new SqlCommand(queryOrder, con)) {
+                using(SqlCommand cmd = new SqlCommand(queryOrderASC, con)) {
+                    cmd.Parameters.AddWithValue("@var", order);
+
                     sdr = cmd.ExecuteReader();
 
                     while(sdr.Read()) {

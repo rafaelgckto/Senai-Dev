@@ -1,11 +1,8 @@
 USE Peoples;
 
-INSERT INTO Funcionario (nome, sobrenome)
+INSERT INTO Funcionario (nome, sobrenome, dtNasc)
 VALUES (
-	'Catarina', 'Strada'
+	'Catarina', 'Strada', '11/08/1990'
 ), (
-	'Tadeu', 'Vitelli'
+	'Tadeu', 'Vitelli', '08/03/1991'
 );
-
-UPDATE Funcionario SET dtNasc = '11/08/1990' WHERE idFuncionario = 1;
-UPDATE Funcionario SET dtNasc = '08/03/1991' WHERE idFuncionario = 2;
