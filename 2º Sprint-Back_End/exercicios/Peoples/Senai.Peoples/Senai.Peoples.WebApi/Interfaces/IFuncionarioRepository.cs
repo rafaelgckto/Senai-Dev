@@ -9,7 +9,8 @@ namespace Senai.Peoples.WebApi.Interfaces {
         List<Funcionario> Get();
         Funcionario GetById(int id);
         Funcionario GetByName(string nameEmployee);
-        Funcionario GetFullName(string nameEmployee, string surnameEmployee);
+        List<Funcionario> GetFullName();
+        List<Funcionario> GetOrdination(string order);
         void Insert(Funcionario newEmployee);
         void Update(Funcionario employee);
         void UpdateIdUrl(int id, Funcionario employee);

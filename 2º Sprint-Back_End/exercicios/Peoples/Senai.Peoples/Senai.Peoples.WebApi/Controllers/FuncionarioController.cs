@@ -66,22 +66,27 @@ namespace Senai.Peoples.WebApi.Controllers {
             return Ok(soughtEmployee);
         }
 
-        [HttpGet("{fullNameEmployee}")]
-        public ActionResult GetFullName(string fullNameEmployee) {
-            // UNDONE: Resolver a condição Ex.: { "nomeCompleto" : "Catarina Strada" };
+        /// <summary>
+        /// Lista todos os funcionários, exibindo o nome completo.
+        /// </summary>
+        /// <returns>A lista de funcionários com nome completo.</returns>
+        [HttpGet("fullName")]
+        public ActionResult FullName() {
+            List<Funcionario> listEmployee = _employeeRepository.GetFullName();
 
-            // string t = fullNameEmployee;
-            
-            // bool a = char.IsUpper(fullNameEmployee, 0);
+            return Ok(listEmployee);
+        }
 
-            string[] names = fullNameEmployee.Split(' ');
-            Funcionario soughtEmployee = _employeeRepository.GetFullName(names[0], names[1]);
+        /// <summary>
+        /// Lista todos os funcionários em ordem crescente ou decrescente(ASC - ascending ou DESC - descending).
+        /// </summary>
+        /// <param name="order">O tipo de ordem que será buscado.</param>
+        /// <returns>A lista de funcionários na ordem escolhida.</returns>
+        [HttpGet("ordination/{order}")]
+        public ActionResult GetOrder(string order) {
+            List<Funcionario> listEmployee = _employeeRepository.GetOrdination(order);
 
-            if(soughtEmployee == null)
-                return NotFound("Nenhum funcionário foi encontrado.");
-            
-
-            return Ok(soughtEmployee);
+            return Ok(listEmployee);
         }
 
         /// <summary>

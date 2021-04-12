@@ -3,7 +3,6 @@ using Senai.Peoples.WebApi.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Globalization;
 
 namespace Senai.Peoples.WebApi.Repositories {
     /// <summary>
@@ -40,10 +39,10 @@ namespace Senai.Peoples.WebApi.Repositories {
 
                         listEmployees.Add(employee);
                     }
+
+                    return listEmployees;
                 }
             }
-
-            return listEmployees;
         }
 
         /// <summary>
@@ -74,7 +73,7 @@ namespace Senai.Peoples.WebApi.Repositories {
 
                         return soughtEmployee;
                     }
-                    
+
                     return null;
                 }
             }
@@ -118,36 +117,67 @@ namespace Senai.Peoples.WebApi.Repositories {
         }
 
         /// <summary>
-        /// 
+        /// Lista todos os funcionários, exibindo o nome completo.
         /// </summary>
-        /// <param name="fullNameEmployee"></param>
-        /// <returns></returns>
-        public Funcionario GetFullName(string nameEmployee, string surnameEmployee) {
+        /// <returns>A lista de funcionários com nome completo.</returns>
+        public List<Funcionario> GetFullName() {
+            List<Funcionario> listEmployees = new List<Funcionario>();
+
             using(SqlConnection con = new SqlConnection(stringConexao)) {
-                string querySelectById = "SELECT idFuncionario, nome, sobrenome, dtNasc FROM Funcionario WHERE nome = @NOME AND sobrenome = @SOBRENOME";
+                string queryFullName = "SELECT CONCAT(nome, ' ', sobrenome) AS [Nome Completo] FROM Funcionario";
 
                 con.Open();
 
                 SqlDataReader sdr;
 
-                using(SqlCommand cmd = new SqlCommand(querySelectById, con)) {
-                    cmd.Parameters.AddWithValue("@NOME", nameEmployee);
-                    cmd.Parameters.AddWithValue("@SOBRENOME", nameEmployee);
-
+                using(SqlCommand cmd = new SqlCommand(queryFullName, con)) {
                     sdr = cmd.ExecuteReader();
 
-                    if(sdr.Read()) {
-                        Funcionario soughtEmployee = new Funcionario() {
-                            idFuncionario = Convert.ToInt32(sdr["idFuncionario"]),
+                    while(sdr.Read()) {
+                        /*Funcionario soughtEmployee = new Funcionario() {
                             nome = sdr["nome"].ToString(),
-                            sobrenome = sdr["sobrenome"].ToString(),
-                            dtNasc = Convert.ToDateTime(sdr["dtNasc"])
+                            sobrenome = sdr["sobrenome"].ToString()
                         };
 
-                        return soughtEmployee;
+                        listEmployees.Add(soughtEmployee);*/
                     }
 
-                    return null;
+                    return listEmployees;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Lista todos os funcionários em ordem crescente ou decrescente(ASC - ascending ou DESC - descending).
+        /// </summary>
+        /// <param name="order">O tipo de ordem que será buscado.</param>
+        /// <returns>A lista de funcionários na ordem escolhida.</returns>
+        public List<Funcionario> GetOrdination(string order) {
+            List<Funcionario> listEmployees = new List<Funcionario>();
+
+            using(SqlConnection con = new SqlConnection(stringConexao)) {
+                string queryOrderASC = "SELECT nome, sobrenome FROM Funcionario ORDER BY nome ASC";
+                string queryOrderDESC = "SELECT nome, sobrenome FROM Funcionario ORDER BY nome DESC";
+
+                string queryOrder = (order == "ASC") ? queryOrderASC : queryOrderDESC;
+
+                con.Open();
+
+                SqlDataReader sdr;
+
+                using(SqlCommand cmd = new SqlCommand(queryOrder, con)) {
+                    sdr = cmd.ExecuteReader();
+
+                    while(sdr.Read()) {
+                        Funcionario soughtEmployee = new Funcionario() {
+                            nome = sdr["nome"].ToString(),
+                            sobrenome = sdr["sobrenome"].ToString()
+                        };
+
+                        listEmployees.Add(soughtEmployee);
+                    }
+
+                    return listEmployees;
                 }
             }
         }
