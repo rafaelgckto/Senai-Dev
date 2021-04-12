@@ -50,6 +50,49 @@
 					"response": []
 				},
 				{
+					"name": "Listar pelo Nome",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/funcionario/fullName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"funcionario",
+								"fullName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ordernation",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/funcionario/ordernation/asc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"funcionario",
+								"ordernation",
+								"asc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Cadastrar",
 					"request": {
 						"method": "POST",
