@@ -156,18 +156,17 @@ namespace Senai.Peoples.WebApi.Repositories {
             List<Funcionario> listEmployees = new List<Funcionario>();
 
             using(SqlConnection con = new SqlConnection(stringConexao)) {
-                string queryOrderASC = "SELECT nome, sobrenome FROM Funcionario ORDER BY nome @var";
-                //string queryOrderDESC = "SELECT nome, sobrenome FROM Funcionario ORDER BY nome DESC";
-
-                //string queryOrder = (order == "ASC") ? queryOrderASC : queryOrderDESC;
+                var queryOrder = order switch {
+                    "ASC" => "SELECT nome, sobrenome FROM Funcionario ORDER BY nome ASC",
+                    "DESC" => "SELECT nome, sobrenome FROM Funcionario ORDER BY nome DESC",
+                    _ => throw new NotSupportedException()
+                };
 
                 con.Open();
 
                 SqlDataReader sdr;
 
-                using(SqlCommand cmd = new SqlCommand(queryOrderASC, con)) {
-                    cmd.Parameters.AddWithValue("@var", order);
-
+                using(SqlCommand cmd = new SqlCommand(queryOrder, con)) {
                     sdr = cmd.ExecuteReader();
 
                     while(sdr.Read()) {
