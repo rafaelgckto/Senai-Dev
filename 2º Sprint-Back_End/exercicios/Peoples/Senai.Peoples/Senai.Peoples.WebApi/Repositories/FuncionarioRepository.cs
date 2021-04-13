@@ -134,12 +134,14 @@ namespace Senai.Peoples.WebApi.Repositories {
                     sdr = cmd.ExecuteReader();
 
                     while(sdr.Read()) {
-                        /*Funcionario soughtEmployee = new Funcionario() {
-                            nome = sdr["nome"].ToString(),
-                            sobrenome = sdr["sobrenome"].ToString()
+                        Funcionario soughtEmployee = new Funcionario() {
+                            //idFuncionario = Convert.ToInt32(sdr["idFuncionario"]),
+                            nome = sdr[0].ToString(),
+                            //nome = sdr["nome"].ToString() + ' ' + sdr["sobrenome"].ToString()
+                            //dtNasc = Convert.ToDateTime(sdr["dtNasc"])
                         };
 
-                        listEmployees.Add(soughtEmployee);*/
+                        listEmployees.Add(soughtEmployee);
                     }
 
                     return listEmployees;
@@ -156,11 +158,7 @@ namespace Senai.Peoples.WebApi.Repositories {
             List<Funcionario> listEmployees = new List<Funcionario>();
 
             using(SqlConnection con = new SqlConnection(stringConexao)) {
-                var queryOrder = order switch {
-                    "ASC" => "SELECT nome, sobrenome FROM Funcionario ORDER BY nome ASC",
-                    "DESC" => "SELECT nome, sobrenome FROM Funcionario ORDER BY nome DESC",
-                    _ => throw new NotSupportedException()
-                };
+                string queryOrder = $"SELECT nome, sobrenome FROM Funcionario ORDER BY nome {order}";
 
                 con.Open();
 
