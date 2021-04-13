@@ -86,6 +86,10 @@ namespace Senai.Peoples.WebApi.Controllers {
         public ActionResult GetOrder(string order) {
             List<Funcionario> listEmployee = _employeeRepository.GetOrdination(order);
 
+            if(order != "ASC" && order != "DESC") {
+                return BadRequest("Não é possível ordenar da maneira solicitada. Por favor, ordene por 'ASC' ou 'DESC'");
+            }
+
             return Ok(listEmployee);
         }
 
