@@ -16,15 +16,9 @@ VALUES (
 	'11945878596', '07/04/1998', '256789482', '45678925896', 3
 );
 
---Adicionar Tabela 'HoraFuncionamento' com atributos "abertura" e "fechamento". Relação 1:1 chave FK vai na tabela Clinica.
-INSERT INTO HoraFuncionamento (abertura, fechamento)
-VALUES (
-	'', ''
-);
-
 INSERT INTO Clinica (horaFuncionamento, cnpj, nomeFantasia, razaoSocial, idEndereco)
 VALUES (
-	'07:00 - 20:00', '86400902000130', 'Clínica Possarle', 'SP Medical Group', 1
+	'07:00-20:00', '86400902000130', 'Clínica Possarle', 'SP Medical Group', 1
 );
 
 INSERT INTO Especialidade (nome)
