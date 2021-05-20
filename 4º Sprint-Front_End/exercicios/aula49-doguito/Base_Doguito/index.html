@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" type="text/css" href="styles.css" />
+   <title>Doguitos</title>
+</head>
+
+<body>
+   <h1>SITE DE DOGUINHOS</h1>
+   <div id="dog1">
+      <img class="imagem1" src="Ibageins/2.jpeg" alt="Sammy" />
+      <h2>Sammy</h2>
+   </div>
+   <div id="dog2">
+      <img class="imagem2" src="Ibageins/3.jpeg" alt="Dragão" />
+      <h2>Dragão</h2>
+   </div>
+   <div id="dog3">
+      <img class="imagem3" src="Ibageins/4.jpeg" alt="Milton" />
+      <h2>Milton</h2>
+   </div>
+   <div id="dog4">
+      <img class="imagem4" src="Ibageins/5.jpeg" alt="Penny" />
+      <h2>Penny</h2>
+   </div>
+   <div id="dog5">
+      <img class="imagem5" src="Ibageins/6.jpeg" alt="Nenem" />
+      <h2>Nenem</h2>
+   </div>
+   <div id="botauns">
+      <input id="btn" type="button" value="Nome dos Spitz" onclick="soSpitz()" /> <!-- Filter -->
+      <input id="btn" type="button" value="Idade Real" onclick="idadeReal()" /> <!-- Map -->
+      <input id="btn" type="button" value="Soma todas as Idades" onclick="idadeSoma()" /> <!-- Reduce -->
+      <input id="btn" type="button" value="Piorar Site" onclick="mudaTudo()" />
+   </div>
+
+   <script>
+      dogs = [{
+         nome: 'Sammy',
+         idade: 6,
+         raca: 'Samoieda'
+      }, {
+         nome: 'Dragão',
+         idade: 5,
+         raca: 'Spitz Alemão'
+      }, {
+         nome: 'Milton',
+         idade: 8,
+         raca: 'Spitz Alemão'
+      }, {
+         nome: 'Penny',
+         idade: 6,
+         raca: 'Spitz Alemão'
+      }, {
+         nome: 'Nenem',
+         idade: 4,
+         raca: 'Spitz Alemão'
+      }];
+
+      //solta seus script brabos aqui
+
+      function soSpitz() {
+         let filtered = dogs.filter(function (element) {
+            return element.raca.includes("Spitz");
+         });
+
+         let names = [];
+         let index = 0;
+
+         while (index < filtered.length) {
+            names[index] = filtered[index].nome;
+            index++;
+         }
+
+         document.getElementsByTagName("h1")[0].innerHTML = names.join(', ');
+      }
+
+      function idadeReal() {
+         let mapping = dogs.map(function (element) {
+            return [element.nome, element.idade];
+         });
+
+         let arrayToString = () => {
+            let str = '';
+
+            for (let i = 0; i < mapping.length; i++) {
+               let innerArray = mapping[i].length;
+
+               for (let j = 0; j < innerArray; j++) {
+                  let test = (j != 0 ? ', ' : "/");
+                  str += mapping[i][j] + test;
+               }
+            }
+
+            return str;
+         };
+
+         document.getElementsByTagName("h1")[0].innerHTML = arrayToString();
+      }
+
+      function idadeSoma() {
+         let reducer = (total, item) => {
+            return total + item.idade;
+         };
+
+         let summation = dogs.reduce(reducer, 0);
+
+         document.getElementsByTagName("h1")[0].innerHTML = summation.toString();
+      }
+
+      function mudaTudo() {
+         let changeBackground = () => {
+            let a = document.querySelector('body');
+            a.removeAttribute('background-image');
+            a.style.backgroundColor = '#035987';
+         };
+
+         let changePhotos = () => {
+            let a = document.querySelector('.imagem1');
+            a.setAttribute('src', './Ibageins/1.gif');
+
+            let b = document.querySelector('.imagem2');
+            b.setAttribute('src', './Ibageins/5.jpeg');
+
+            let c = document.querySelector('.imagem3');
+            c.setAttribute('src', './Ibageins/8.jpeg');
+
+            let d = document.querySelector('.imagem4');
+            d.setAttribute('src', './Ibageins/7.jpeg');
+
+            let e = document.querySelector('.imagem5');
+            e.setAttribute('src', './Ibageins/9.jpeg');
+         };
+
+         let changeFontColor = () => {
+            document.getElementsByTagName("h2")[0].style.color = '#0F945A';
+            document.getElementsByTagName("h2")[1].style.color = '#B543E0';
+            document.getElementsByTagName("h2")[2].style.color = '#2DE092';
+            document.getElementsByTagName("h2")[3].style.color = '#E0A013';
+            document.getElementsByTagName("h2")[4].style.color = '#946F1F';
+         };
+
+         let changeTexts = () => {
+            document.getElementsByTagName("h2")[0].innerHTML = 'Tammy';
+            document.getElementsByTagName("h2")[1].innerHTML = 'Lagarto';
+            document.getElementsByTagName("h2")[2].innerHTML = 'Hilton';
+            document.getElementsByTagName("h2")[3].innerHTML = 'Teny';
+            document.getElementsByTagName("h2")[4].innerHTML = 'Bebe';
+         };
+
+         let extraChanges = () => {
+
+         };
+         
+         //changeBackground();
+         changePhotos();
+         changeFontColor();
+         changeTexts();
+         //extraChanges;
+      }
+   </script>
+</body>
+
+</html>
