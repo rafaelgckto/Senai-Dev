@@ -1,0 +1,138 @@
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\appsettings.Development.json
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\appsettings.json
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\MedicalGroup.WebApi.exe
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\MedicalGroup.WebApi.deps.json
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\MedicalGroup.WebApi.runtimeconfig.json
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\MedicalGroup.WebApi.runtimeconfig.dev.json
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\MedicalGroup.WebApi.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\ref\MedicalGroup.WebApi.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\MedicalGroup.WebApi.pdb
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\MedicalGroup.WebApi.xml
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\Humanizer.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\obj\Debug\net5.0\MedicalGroup.WebApi.csproj.AssemblyReference.cache
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\obj\Debug\net5.0\MedicalGroup.WebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\obj\Debug\net5.0\MedicalGroup.WebApi.AssemblyInfoInputs.cache
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\obj\Debug\net5.0\MedicalGroup.WebApi.AssemblyInfo.cs
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\obj\Debug\net5.0\MedicalGroup.WebApi.csproj.CoreCompileInputs.cache
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\obj\Debug\net5.0\MedicalGroup.WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\obj\Debug\net5.0\MedicalGroup.WebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\obj\Debug\net5.0\staticwebassets\MedicalGroup.WebApi.StaticWebAssets.Manifest.cache
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\obj\Debug\net5.0\staticwebassets\MedicalGroup.WebApi.StaticWebAssets.xml
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\obj\Debug\net5.0\scopedcss\bundle\MedicalGroup.WebApi.styles.css
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\obj\Debug\net5.0\MedicalGroup.WebApi.RazorTargetAssemblyInfo.cache
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\obj\Debug\net5.0\MedicalGroup.WebApi.csproj.CopyComplete
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\obj\Debug\net5.0\MedicalGroup.WebApi.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\obj\Debug\net5.0\ref\MedicalGroup.WebApi.dll
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\obj\Debug\net5.0\MedicalGroup.WebApi.xml
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\obj\Debug\net5.0\MedicalGroup.WebApi.pdb
+C:\Trio\Rafael\Dev\Senai-Dev\2º Sprint-Back_End\SP Medical Group\MedicalGroup.WebApi\obj\Debug\net5.0\MedicalGroup.WebApi.genruntimeconfig.cache
+E:\Rafael\MG\backend\MedicalGroup.WebApi\obj\Debug\net5.0\MedicalGroup.WebApi.csproj.AssemblyReference.cache
+E:\Rafael\MG\backend\MedicalGroup.WebApi\obj\Debug\net5.0\MedicalGroup.WebApi.GeneratedMSBuildEditorConfig.editorconfig
+E:\Rafael\MG\backend\MedicalGroup.WebApi\obj\Debug\net5.0\MedicalGroup.WebApi.AssemblyInfoInputs.cache
+E:\Rafael\MG\backend\MedicalGroup.WebApi\obj\Debug\net5.0\MedicalGroup.WebApi.AssemblyInfo.cs
+E:\Rafael\MG\backend\MedicalGroup.WebApi\obj\Debug\net5.0\MedicalGroup.WebApi.csproj.CoreCompileInputs.cache
+E:\Rafael\MG\backend\MedicalGroup.WebApi\obj\Debug\net5.0\MedicalGroup.WebApi.MvcApplicationPartsAssemblyInfo.cs
+E:\Rafael\MG\backend\MedicalGroup.WebApi\obj\Debug\net5.0\MedicalGroup.WebApi.MvcApplicationPartsAssemblyInfo.cache
+E:\Rafael\MG\backend\MedicalGroup.WebApi\obj\Debug\net5.0\MedicalGroup.WebApi.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\obj\Debug\net5.0\ref\MedicalGroup.WebApi.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\obj\Debug\net5.0\MedicalGroup.WebApi.xml
+E:\Rafael\MG\backend\MedicalGroup.WebApi\obj\Debug\net5.0\MedicalGroup.WebApi.pdb
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\appsettings.Development.json
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\appsettings.json
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\MedicalGroup.WebApi.exe
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\MedicalGroup.WebApi.deps.json
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\MedicalGroup.WebApi.runtimeconfig.json
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\MedicalGroup.WebApi.runtimeconfig.dev.json
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\MedicalGroup.WebApi.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\ref\MedicalGroup.WebApi.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\MedicalGroup.WebApi.pdb
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\MedicalGroup.WebApi.xml
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\Humanizer.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\Newtonsoft.Json.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\System.Runtime.Caching.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\Rafael\MG\backend\MedicalGroup.WebApi\obj\Debug\net5.0\staticwebassets\MedicalGroup.WebApi.StaticWebAssets.Manifest.cache
+E:\Rafael\MG\backend\MedicalGroup.WebApi\obj\Debug\net5.0\staticwebassets\MedicalGroup.WebApi.StaticWebAssets.xml
+E:\Rafael\MG\backend\MedicalGroup.WebApi\obj\Debug\net5.0\scopedcss\bundle\MedicalGroup.WebApi.styles.css
+E:\Rafael\MG\backend\MedicalGroup.WebApi\obj\Debug\net5.0\MedicalGroup.WebApi.RazorTargetAssemblyInfo.cache
+E:\Rafael\MG\backend\MedicalGroup.WebApi\obj\Debug\net5.0\MedicalGroup.WebApi.csproj.CopyComplete
+E:\Rafael\MG\backend\MedicalGroup.WebApi\obj\Debug\net5.0\MedicalGroup.WebApi.genruntimeconfig.cache

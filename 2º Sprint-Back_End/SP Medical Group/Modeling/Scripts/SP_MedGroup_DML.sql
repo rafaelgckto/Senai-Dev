@@ -9,13 +9,6 @@ VALUES (
 	'Rua Vereador Geraldo de Camargo', '66', 'Santa Luzia', 'Ribeirão Pires', 'SP', '09405380'
 );
 
-INSERT INTO dbo.Paciente (telefone, dtNasc, rg, cpf, idEndereco)
-VALUES (
-	'11936586987', '06/08/1999', '369478125', '12345678974', 2
-), (
-	'11945878596', '07/04/1998', '256789482', '45678925896', 3
-);
-
 INSERT INTO dbo.Clinica (horaFuncionamento, cnpj, nomeFantasia, razaoSocial, idEndereco)
 VALUES (
 	'07:00-20:00', '86400902000130', 'Clínica Possarle', 'SP Medical Group', 1
@@ -56,15 +49,6 @@ VALUES (
 	'Psiquiatria'
 );
 
-INSERT INTO dbo.Medico (crm, idEspecialidade, idClinica)
-VALUES (
-	'54369SP', 2, 1
-), (
-	'53789SP', 16, 1
-), (
-	'68741SP', 15, 1
-);
-
 INSERT INTO dbo.Situacao (tipo)
 VALUES (
 	'Agendada'
@@ -72,15 +56,6 @@ VALUES (
 	'Cancelada'
 ), (
 	'Realizada'
-);
-
-INSERT INTO dbo.Consulta (dtAgendamento, descricao, idSituacao, idMedico, idPaciente)
-VALUES (
-	'06/09/2021  07:00', 'Texto...', 1, 2, 1
-), (
-	'10/03/2021 08:00', 'Texto...', 3, 1, 2
-), (
-	'25/05/2021 10:30', 'Texto...', 2, 3, 1
 );
 
 INSERT INTO dbo.TipoUsuario (perfil)
@@ -92,17 +67,42 @@ VALUES (
 	'Paciente'
 );
 
-INSERT INTO dbo.Usuario (nome, email, senha, idTipoUsuario, idPaciente, idMedico)
+INSERT INTO dbo.Usuario (email, senha, idTipoUsuario)
 VALUES (
-	'Rafael Silva', 'rafael.silva@spmedicalgroup.com.br', '123456', 2, NULL, 1
+	'rafael.silva@spmedicalgroup.com.br', '123456', 2
 ), (
-	'Fernando', 'fernando@gmail.com', '789456', 3, 1, NULL
+	'fernando@gmail.com', '789456', 3
 ), (
-	'AdminMG', 'admin.mg@spmedicalgroup.com.br', '123789', 1, NULL, NULL
+	'admin.mg@spmedicalgroup.com.br', '123789', 1
 ), (
-	'Ricardo Souza', 'ricardo.souza@spmedicalgroup.com.br', '741852', 2, NULL, 2
+	'ricardo.souza@spmedicalgroup.com.br', '741852', 2
 ), (
-	'João', 'joao@gmail.com', '963852', 3, 2, NULL
+	'joao@gmail.com', '963852', 3
 ), (
-	'Roberto Texeira', 'roberto.texeira@spmedicalgroup.com.br', '159753', 2, NULL, 3
+	'roberto.texeira@spmedicalgroup.com.br', '159753', 2
+);
+
+INSERT INTO dbo.Paciente (nome, telefone, dtNasc, rg, cpf, idUsuario, idEndereco)
+VALUES (
+	'Fernando', '11936586987', '06/08/1999', '369478125', '12345678974', 2, 2
+), (
+	'João', '11945878596', '07/04/1998', '256789482', '45678925896', 5, 3
+);
+
+INSERT INTO dbo.Medico (nome, crm, idUsuario, idEspecialidade, idClinica)
+VALUES (
+	'Rafael Silva', '54369SP', 1, 2, 1
+), (
+	'Ricardo Souza', '53789SP', 4, 16, 1
+), (
+	'Roberto Texeira', '68741SP', 6, 15, 1
+);
+
+INSERT INTO dbo.Consulta (dtAgendamento, descricao, idSituacao, idMedico, idPaciente)
+VALUES (
+	'06/09/2021  07:00', 'Texto...', 1, 2, 1
+), (
+	'10/03/2021 08:00', 'Texto...', 3, 1, 2
+), (
+	'25/05/2021 10:30', 'Texto...', 2, 3, 1
 );

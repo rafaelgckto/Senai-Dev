@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MedicalGroup.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:MedicalGroup.WebApi.Controllers.ClinicaController.Delete(System.Int32)">
+            <summary>
+            Deleta uma clinica.
+            </summary>
+            <param name="id">O id da clinica que será deletada.</param>
+            <returns>Retorna StatusCode 204(No Content).</returns>
+        </member>
+        <member name="M:MedicalGroup.WebApi.Controllers.ClinicaController.Get">
+            <summary>
+            Lista todos as clinicas.
+            </summary>
+            <returns>Retorna um objeto JSON, com a lista de clinicas.</returns>
+        </member>
+        <member name="M:MedicalGroup.WebApi.Controllers.ClinicaController.Get(System.Int32)">
+            <summary>
+            Busca apenas uma clinica.
+            </summary>
+            <param name="id">O id da clinica que será buscada.</param>
+            <returns>Retorna um objeto JSON, da clinica buscada.</returns>
+        </member>
+        <member name="M:MedicalGroup.WebApi.Controllers.ClinicaController.Post(MedicalGroup.WebApi.Domains.Clinica)">
+            <summary>
+            Cadastra uma nova clinica.
+            </summary>
+            <param name="newEntity">Objeto que será cadastrado.</param>
+            <returns>Retorna um StatusCode 201(Created).</returns>
+        </member>
+        <member name="M:MedicalGroup.WebApi.Controllers.ClinicaController.Put(System.Int32,MedicalGroup.WebApi.Domains.Clinica)">
+            <summary>
+            Atualiza uma clinica.
+            </summary>
+            <param name="id">O id da clinica escolhida a ser atualizada.</param>
+            <param name="newEntity">Objeto com as novas informações.</param>
+            <returns>Retorna um StatusCode 204(No Content).</returns>
+        </member>
+        <member name="M:MedicalGroup.WebApi.Controllers.ConsultaController.Delete(System.Int32)">
+            <summary>
+            Deleta uma consulta.
+            </summary>
+            <param name="id">O id da consulta que será deletada.</param>
+            <returns>Retorna StatusCode 204(No Content).</returns>
+        </member>
+        <member name="M:MedicalGroup.WebApi.Controllers.ConsultaController.Get">
+            <summary>
+            Lista todas as consultas.
+            </summary>
+            <returns>Retorna um objeto JSON, com a lista de consulta.</returns>
+        </member>
+        <member name="M:MedicalGroup.WebApi.Controllers.ConsultaController.Get(System.Int32)">
+            <summary>
+            Busca apenas uma consulta.
+            </summary>
+            <param name="id">O id da consulta que será buscada.</param>
+            <returns>Retorna um objeto JSON, da consulta buscada.</returns>
+        </member>
+        <member name="M:MedicalGroup.WebApi.Controllers.ConsultaController.Post(MedicalGroup.WebApi.Domains.Consulta)">
+            <summary>
+            Cadastra uma nova consulta.
+            </summary>
+            <param name="newEntity">Objeto que será cadastrado.</param>
+            <returns>Retorna um StatusCode 201(Created).</returns>
+        </member>
+        <member name="M:MedicalGroup.WebApi.Controllers.ConsultaController.Put(System.Int32,MedicalGroup.WebApi.Domains.Consulta)">
+            <summary>
+            Atualiza uma consulta.
+            </summary>
+            <param name="id">O id da consulta escolhida a ser atualizada.</param>
+            <param name="newEntity">Objeto com as novas informações.</param>
+            <returns>Retorna um StatusCode 204(No Content).</returns>
+        </member>
+        <member name="M:MedicalGroup.WebApi.Controllers.EnderecoController.Delete(System.Int32)">
+            <summary>
+            Deleta um endereço.
+            </summary>
+            <param name="id">O id do endereço que será deletado.</param>
+            <returns>Retorna StatusCode 204(No Content).</returns>
+        </member>
+        <member name="M:MedicalGroup.WebApi.Controllers.EnderecoController.Get">
+            <summary>
+            Lista todos os endereços.
+            </summary>
+            <returns>Retorna um objeto JSON, com a lista de endereços.</returns>
+        </member>
+        <member name="M:MedicalGroup.WebApi.Controllers.EnderecoController.Get(System.Int32)">
+            <summary>
+            Busca apenas um endereço.
+            </summary>
+            <param name="id">O id do endereço que será buscado.</param>
+            <returns>Retorna um objeto JSON, do endereço buscado.</returns>
+        </member>
+        <member name="M:MedicalGroup.WebApi.Controllers.EnderecoController.Post(MedicalGroup.WebApi.Domains.Endereco)">
+            <summary>
+            Cadastra um novo endereço.
+            </summary>
+            <param name="newEntity">Objeto que será cadastrado.</param>
+            <returns>Retorna um StatusCode 201(Created).</returns>
+        </member>
+        <member name="M:MedicalGroup.WebApi.Controllers.EnderecoController.Put(System.Int32,MedicalGroup.WebApi.Domains.Endereco)">
+            <summary>
+            Atualiza um endereço.
+            </summary>
+            <param name="id">O id do endereço escolhido a ser atualizado.</param>
+            <param name="newEntity">Objeto com as novas informações.</param>
+            <returns>Retorna um StatusCode 204(No Content).</returns>
+        </member>
+        <member name="M:MedicalGroup.WebApi.Controllers.LoginController.PostLogin(MedicalGroup.WebApi.ViewModel.LoginViewModel)">
+            <summary>
+            Valida o usuário
+            </summary>
+            <param name="login">Objeto login que contém o e-mail e a senha do usuário</param>
+            <returns>Retorna um token com as informações do usuário</returns>
+        </member>
+        <member name="M:MedicalGroup.WebApi.Controllers.MedicoController.Delete(System.Int32)">
+            <summary>
+            Deleta um médico.
+            </summary>
+            <param name="id">O id do médico que será deletado.</param>
+            <returns>Retorna StatusCode 204(No Content).</returns>
+        </member>
+        <member name="M:MedicalGroup.WebApi.Controllers.MedicoController.Get">
+            <summary>
+            Lista todos os médicos.
+            </summary>
+            <returns>Retorna um objeto JSON, com a lista de médicos.</returns>
+        </member>
+        <member name="M:MedicalGroup.WebApi.Controllers.MedicoController.Get(System.Int32)">
+            <summary>
+            Busca apenas um médico.
+            </summary>
+            <param name="id">O id do médico que será buscado.</param>
+            <returns>Retorna um objeto JSON, do médico buscado.</returns>
+        </member>
+        <member name="M:MedicalGroup.WebApi.Controllers.MedicoController.Post(MedicalGroup.WebApi.Domains.Medico)">
+            <summary>
+            Cadastra um novo médico.
+            </summary>
+            <param name="newEntity">Objeto que será cadastrado.</param>
+            <returns>Retorna um StatusCode 201(Created).</returns>
+        </member>
+        <member name="M:MedicalGroup.WebApi.Controllers.MedicoController.Put(System.Int32,MedicalGroup.WebApi.Domains.Medico)">
+            <summary>
+            Atualiza um médico.
+            </summary>
+            <param name="id">O id do médico escolhido a ser atualizado.</param>
+            <param name="newEntity">Objeto com as novas informações.</param>
+            <returns>Retorna um StatusCode 204(No Content).</returns>
+        </member>
+        <member name="M:MedicalGroup.WebApi.Controllers.PacienteController.Delete(System.Int32)">
+            <summary>
+            Deleta um paciente.
+            </summary>
+            <param name="id">O id do paciente que será deletado.</param>
+            <returns>Retorna StatusCode 204(No Content).</returns>
+        </member>
+        <member name="M:MedicalGroup.WebApi.Controllers.PacienteController.Get">
+            <summary>
+            Lista todos os pacientes.
+            </summary>
+            <returns>Retorna um objeto JSON, com a lista de pacientes.</returns>
+        </member>
+        <member name="M:MedicalGroup.WebApi.Controllers.PacienteController.Get(System.Int32)">
+            <summary>
+            Busca apenas um paciente.
+            </summary>
+            <param name="id">O id do paciente que será buscado.</param>
+            <returns>Retorna um objeto JSON, do paciente buscado.</returns>
+        </member>
+        <member name="M:MedicalGroup.WebApi.Controllers.PacienteController.Post(MedicalGroup.WebApi.Domains.Paciente)">
+            <summary>
+            Cadastra um novo paciente.
+            </summary>
+            <param name="newEntity">Objeto que será cadastrado.</param>
+            <returns>Retorna um StatusCode 201(Created).</returns>
+        </member>
+        <member name="M:MedicalGroup.WebApi.Controllers.PacienteController.Put(System.Int32,MedicalGroup.WebApi.Domains.Paciente)">
+            <summary>
+            Atualiza um paciente.
+            </summary>
+            <param name="id">O id do paciente escolhido a ser atualizado.</param>
+            <param name="newEntity">Objeto com as novas informações.</param>
+            <returns>Retorna um StatusCode 204(No Content).</returns>
+        </member>
+        <member name="M:MedicalGroup.WebApi.Controllers.UsuarioController.Delete(System.Int32)">
+            <summary>
+            Deleta um usuário.
+            </summary>
+            <param name="id">O id do usuário que será deletado.</param>
+            <returns>Retorna StatusCode 204(No Content).</returns>
+        </member>
+        <member name="M:MedicalGroup.WebApi.Controllers.UsuarioController.Get">
+            <summary>
+            Lista todos os usuários.
+            </summary>
+            <returns>Retorna um objeto JSON, com a lista de usuários.</returns>
+        </member>
+        <member name="M:MedicalGroup.WebApi.Controllers.UsuarioController.Get(System.Int32)">
+            <summary>
+            Busca apenas um usuário.
+            </summary>
+            <param name="id">O id do usuário que será buscado.</param>
+            <returns>Retorna um objeto JSON, do usuário buscado.</returns>
+        </member>
+        <member name="M:MedicalGroup.WebApi.Controllers.UsuarioController.Post(MedicalGroup.WebApi.Domains.Usuario)">
+            <summary>
+            Cadastra um novo usuário.
+            </summary>
+            <param name="newEntity">Objeto que será cadastrado.</param>
+            <returns>Retorna um StatusCode 201(Created).</returns>
+        </member>
+        <member name="M:MedicalGroup.WebApi.Controllers.UsuarioController.Put(System.Int32,MedicalGroup.WebApi.Domains.Usuario)">
+            <summary>
+            Atualiza um usuário.
+            </summary>
+            <param name="id">O id do usuário escolhido a ser atualizado.</param>
+            <param name="newEntity">Objeto com as novas informações.</param>
+            <returns>Retorna um StatusCode 204(No Content).</returns>
+        </member>
+    </members>
+</doc>

@@ -152,7 +152,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluLm1nQHNwbWVkaWNhbGdyb3VwLmNvbS5iciIsImp0aSI6IjMiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjIwODIyODQ5LCJpc3MiOiJTUF9NRy5XZWJBcGkiLCJhdWQiOiJTUF9NRy5XZWJBcGkifQ.mVHnosdvzeaNScO0gOPjpA3cHNV8LZhcQ9MEQKhpHPw",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluLm1nQHNwbWVkaWNhbGdyb3VwLmNvbS5iciIsImp0aSI6IjMiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjI1MTU1Mjk1LCJpc3MiOiJTUF9NRy5XZWJBcGkiLCJhdWQiOiJTUF9NRy5XZWJBcGkifQ.035KFKxmHs53A4c1T95pOoTxWu00G4zJOXC1NW34iMA",
 									"type": "string"
 								}
 							]
@@ -231,7 +231,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"idConsulta\": 1,\r\n    \"dtAgendamento\": \"2021-09-06T07:00:00\",\r\n    \"descricao\": \"Texto...\",\r\n    \"idSituacao\": 1,\r\n    \"idMedico\": 2,\r\n    \"idPaciente\": 1\r\n}",
+							"raw": "{\r\n    \"dtAgendamento\": \"2021-09-06T07:00:00\",\r\n    \"descricao\": \"Texto...\",\r\n    \"idSituacao\": 1,\r\n    \"idMedico\": 2,\r\n    \"idPaciente\": 1\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
