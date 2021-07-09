@@ -1,0 +1,15 @@
+header.header-body {
+	width: 89vw;
+	height: 11vh;
+	border: 2px solid #000000;
+	border-radius: 0px 25px 0px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+p.p-text {
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+}

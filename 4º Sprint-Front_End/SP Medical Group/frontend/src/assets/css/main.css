@@ -1,0 +1,165 @@
+/* #region Main_Lista */
+
+main {
+	border: 2px solid #000000;
+	border-radius: 0px 0px 25px 0px;
+	height: 76vh;
+}
+
+.container-item {
+	display: flex;
+	justify-content: space-between;
+	margin: 15px 30px;
+}
+
+.doctor-patient {
+	width: 33vw;
+}
+
+.doctor-data {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.patient-data {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 15px;
+	width: 33vw;
+}
+
+.description {
+	width: 30vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.situation-p {
+	/* background-color: #0cc2fe; */
+	border-radius: 10px;
+	width: 7vw;
+	height: 4.5vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.situation-update {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+img.img-gear {
+	width: 25px;
+	height: 25px;
+}
+
+hr.hr-line {
+	width: 85.8vw;
+	border: 1px solid #000000;
+	margin: 5px 0 5px 20px;
+}
+
+.footer-btn {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 30px;
+}
+
+.btn-cadastro {
+	padding: 5px;
+	width: 12vw;
+	font-size: 14px;
+	line-height: 22px;
+	border-radius: 5px;
+	text-decoration: none;
+	cursor: pointer;
+	text-align: center;
+	border: none;
+	transition-duration: 0.4s;
+}
+
+button.btn-cadastro.btn-cadastrar_consulta {
+	background-color: #23e6ad;
+	color: #000;
+	box-shadow: 2px 2px 5px 0px #000000;
+}
+
+button.btn-cadastro.btn-cadastrar_consulta:hover {
+	color: #fff;
+	box-shadow: 2px 2px 5px 0px rgb(168, 168, 168);
+}
+
+/* #endregion Main_Lista */
+
+/* #region Main_Cadastro */
+
+.main_cadastro {
+	height: 75.4vh;
+	border-radius: 0px 0px 25px 0px;
+}
+
+.item-back {
+	display: flex;
+	align-items: center;
+	margin-left: 4em;
+	margin-top: 3em;
+	width: 4.5vw;
+	cursor: pointer;
+}
+
+.line {
+	height: 3vh;
+	border: 1px solid #000;
+}
+
+.item-back p {
+	margin-left: 10px;
+}
+
+.section-container {
+	display: flex;
+	margin-bottom: 4em;
+}
+
+.section-doctor-config {
+	margin-bottom: 0;
+}
+
+.section-item {
+	display: flex;
+	flex-direction: column;
+	margin-top: 1.5em;
+}
+
+label.labels {
+	position: relative;
+	left: 5px;
+}
+
+input[type="text"].input-field {
+	width: 18vw;
+	height: 5vh;
+	border: 2px solid #000000;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: transparent;
+	color: #000000;
+	text-align: left;
+	transition-duration: 0.4s;
+}
+
+input[type="text"].input-field:hover,
+input[type="text"].input-field:focus {
+	border: 1px solid #18bcf2;
+	text-align: center;
+	background-color: transparent;
+	color: #000000;
+	text-align: left;
+}
+
+/* #endregion Main_Cadastro */

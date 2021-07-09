@@ -1,0 +1,71 @@
+.img-bg {
+	width: 98vw;
+	height: 94vh;
+	z-index: -1;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+}
+
+.model-login {
+	width: 25vw;
+	height: 70vh;
+	background-color: #ffffff;
+	mix-blend-mode: normal;
+	opacity: 0.95;
+	border-radius: 40px;
+	position: absolute;
+	left: 145px;
+	top: 60px;
+}
+
+.img-logo {
+	width: 5vw;
+	height: 11vh;
+	display: block;
+	margin: 30px auto;
+}
+
+.item {
+	padding: 5px;
+	margin: 10px;
+	text-align: center;
+}
+
+.label {
+	position: relative;
+}
+
+.label.label-one {
+	right: 100px;
+}
+
+.label.label-two {
+	right: 82px;
+}
+
+input[type="text"].login:hover,
+input[type="text"].login:focus {
+	border: 1px solid #18bcf2;
+	text-align: center;
+	background-color: transparent;
+	color: #000000;
+	text-align: left;
+}
+
+.btn-login {
+	background-color: #ffffff;
+	color: #000000;
+	-webkit-box-shadow: 2px 2px 5px 0px #000000;
+	-moz-box-shadow: 2px 2px 5px 0px #000000;
+	box-shadow: 2px 2px 5px 0px #000000;
+}
+
+.btn-login:hover {
+	background-color: #18bcf2;
+	color: #19fcf9;
+	-webkit-box-shadow: 2px 2px 5px 0px rgba(184, 184, 184, 1);
+	-moz-box-shadow: 2px 2px 5px 0px rgba(184, 184, 184, 1);
+	box-shadow: 2px 2px 5px 0px rgba(184, 184, 184, 1);
+}

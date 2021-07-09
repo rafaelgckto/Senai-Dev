@@ -1,0 +1,37 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	font-family: Poppins;
+}
+
+input.inputs-text {
+	width: 19vw;
+	height: 6vh;
+	border: 1px solid #000000;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: transparent;
+	color: #000000;
+	text-align: left;
+	transition-duration: 0.4s;
+}
+
+button.btn {
+	margin-top: 20px;
+	border: none;
+	border-radius: 10px;
+	width: 50%;
+	padding: 10px 52px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 14px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+
